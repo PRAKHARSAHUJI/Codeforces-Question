@@ -14,7 +14,7 @@ int main ()
         cin >> a ;
         cin >> b;
         
-        if(a+2 < b)
+        if(a+2 <= b)
         {
             count++;
         }
