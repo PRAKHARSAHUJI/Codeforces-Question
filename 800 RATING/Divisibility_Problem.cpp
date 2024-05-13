@@ -1,5 +1,39 @@
 // https://codeforces.com/problemset/problem/1328/A
 
+
+
+#include <bits/stdc++.h>
+using namespace std ;
+int main()
+
+{
+    int t ;
+    cin >> t ;
+
+    while(t--)
+    {
+
+        int x ;
+        int y ;
+        cin>>x;
+        cin>>y;
+            if(x>y)
+            {
+                if(((x%y)+x)%y==0)
+                cout << x%y << endl ;
+                else
+                cout << y-(x%y) << endl ;
+            }
+            else 
+            {
+                cout << y-x << endl ;
+            }
+    }
+}
+
+
+
+
 // #include <bits/stdc++.h>
 // using namespace std ;
 // int main()
@@ -71,31 +105,3 @@
 
 
 
-#include <bits/stdc++.h>
-using namespace std ;
-int main()
-
-{
-    int t ;
-    cin >> t ;
-
-    while(t--)
-    {
-
-        int x ;
-        int y ;
-        cin>>x;
-        cin>>y;
-            if(x>y)
-            {
-                if(((x%y)+x)%y==0)
-                cout << x%y << endl ;
-                else
-                cout << y-(x%y) << endl ;
-            }
-            else 
-            {
-                cout << y-x << endl ;
-            }
-    }
-}
