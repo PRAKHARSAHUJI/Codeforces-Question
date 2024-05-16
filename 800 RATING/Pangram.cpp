@@ -13,6 +13,8 @@ int main()
     transform(s.begin(),s.end(),s.begin(),::tolower);
     sort(s.begin(),s.end());
     int arr[26] = {0};
+
+
     for(int i =0;i<s.length();i++)
     {
         arr[s[i]-'a'] = 1;
