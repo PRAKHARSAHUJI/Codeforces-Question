@@ -1,6 +1,6 @@
 // https://codeforces.com/contest/1974/problem/A
 
-
+// -------------------------------------Incorrect Code---------------------------------------------
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -52,3 +52,89 @@ int main()
     }
 }
 
+
+
+
+
+
+
+
+
+// -------------------------------------Incorrect Code---------------------------------------------
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int t;
+//     cin >> t;
+
+//     while (t--)
+//     {
+//         int x;
+//         cin >> x;
+//         int y;
+//         cin >> y;
+
+//         int screen = 0;
+        
+//         int total_space = x + y*4 ;
+
+//         int blank_space = 0;
+
+//         if(y==0 && x == 0)
+//         cout<<0<<"\n";
+
+//         if(y==0 &&x<=15)
+//         cout<<1<<"\n";
+
+//         else if(y<2 && y>0)
+//         {
+//             screen = 1;
+//             if(x<=11)
+//             cout<<screen<<"\n";
+//             else
+//             cout<<screen+((x-11)%15)<<"\n";
+
+
+//         }
+
+
+
+//         else if( y%2==0 )
+//         {
+//             screen = y/2;
+//             blank_space = 7 * (y/2);
+
+//             if( x < blank_space)
+//             {
+//             cout<<screen<<"\n";
+//             }
+//             else
+//             {
+            
+//             cout<<screen<<"\n";
+//             }
+
+//         }
+//         else
+//         {
+//             screen = y/2+1;
+//             blank_space = (7 * (y/2)) + 11;
+//             if( x < blank_space)
+//             {
+//             cout<<screen<<"\n";
+//             }
+
+//             else
+//             {
+//             cout<<screen+(15/(blank_space-x))<<"\n";
+//             }
+
+
+//         }
+        
+//     }
+
+//     }
