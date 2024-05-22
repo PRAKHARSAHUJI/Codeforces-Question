@@ -1,6 +1,9 @@
 // https://codeforces.com/contest/1974/problem/A
 
-// -------------------------------------Incorrect Code---------------------------------------------
+// -------------------------------------Incorrect Code---------------------------------------------\
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -82,11 +85,12 @@ int main()
 //         int total_space = x + y*4 ;
 
 //         int blank_space = 0;
+//         int required_space = 0;
 
 //         if(y==0 && x == 0)
 //         cout<<0<<"\n";
 
-//         if(y==0 &&x<=15)
+//         else if(y==0 &&x<=15)
 //         cout<<1<<"\n";
 
 //         else if(y<2 && y>0)
@@ -106,15 +110,18 @@ int main()
 //         {
 //             screen = y/2;
 //             blank_space = 7 * (y/2);
-
+//             required_space = x -blank_space;
 //             if( x < blank_space)
 //             {
 //             cout<<screen<<"\n";
 //             }
 //             else
 //             {
-            
-//             cout<<screen<<"\n";
+//             if(required_space%15<=15)
+//             cout<<screen + 1<<"\n";
+//             else
+//             cout<<screen + (required_space/15)+1<<"\n";
+
 //             }
 
 //         }
