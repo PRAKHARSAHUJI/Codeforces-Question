@@ -1,5 +1,5 @@
 // https://codeforces.com/problemset/problem/133/A
-
+// Implementation
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,7 +22,6 @@ int main()
     }
     if(flag)
     cout<<"NO";
-
     return 0;
 }
 
