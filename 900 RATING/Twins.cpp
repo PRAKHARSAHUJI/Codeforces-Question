@@ -1,5 +1,9 @@
 // https://codeforces.com/problemset/problem/160/A
 
+// Greedy Sortings
+
+
+
 // #include <bits/stdc++.h>
 // using namespace std;
 // int main()
