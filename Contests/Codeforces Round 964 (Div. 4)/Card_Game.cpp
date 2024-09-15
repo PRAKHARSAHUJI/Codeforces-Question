@@ -1,4 +1,5 @@
 // https://codeforces.com/contest/1999/problem/B
+// brute forceconstructive algorithms implementation 1000
 
 // -----------------------------------------------Correct Code---------------------------------------------
 
