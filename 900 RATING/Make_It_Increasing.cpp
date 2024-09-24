@@ -1,5 +1,6 @@
 // // -----------------------------------------------Correct Code---------------------------------------------
 
+// https://codeforces.com/problemset/problem/1675/B
 
 // Greedy Implementation 900 Rating
 
