@@ -1,9 +1,11 @@
 // https://codeforces.com/contest/1974/problem/A
 
-// -------------------------------------Incorrect Code---------------------------------------------\
+// -------------------------------------Correct Code---------------------------------------------\
+
+// Greedy Math *800 Rating
 
 
-
+ 
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -18,40 +20,50 @@ int main()
         int y;
         cin >> y;
 
-        int space_1 = x;
-        int space_2 = y * 4;
-        int total_space = space_1 + space_2;
+        int cnt = 0;
+        int space = 0;
+        
 
-        if (y > 2)
+
+        while(y > 0)
         {
-            if (y % 2 == 0)
+            if(y>=2)
             {
-                {
-                    if (x <= 7*(y/2))
-                        cout << y / 2 << "\n";
-                    else
-                        cout << (y / 2) + (x%(7*(y/2))) << "\n";
-                }
+                cnt++;
+                space += 7;
+                y -= 2;
             }
-            else
+            else if(y>=1)
             {
-                if (x <= 11+7*((y/2)+1) )
-                cout << (y / 2) + 1 << "\n";
-                else
-                cout << (y / 2) + (x % (11+7*((y/2)+1))) << "\n";
+                cnt++;
 
+                space += 11;
+                y -= 1;
             }
         }
-        else
-        {
 
-            if (total_space % 15 < 0)
-                cout << 1 << "\n";
-            else if (total_space % 15 == 0)
-                cout << total_space / 15 << "\n";
-            else
-                cout << (total_space / 15) + 1 << "\n";
+        x -= space;
+
+        while(x > 0)
+        {
+            if(x>=15)
+            {
+                cnt++;
+                
+                x -= 15;
+            }
+            else if(x>=1)
+            {
+                cnt++;
+
+                x -= 1;
+                break;
+            }
         }
+
+        cout << cnt << endl;
+
+
     }
 }
 
